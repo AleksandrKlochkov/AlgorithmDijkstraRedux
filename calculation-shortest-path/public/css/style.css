@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham Pro';
+}
+img{
+	border:none;
+}
+
+.clr{
+	clear:both;
+}
+
+html,
+body,
+#root,
+.layout{
+    height: 100%;
+}
+
+.wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.page{
+    display: table-row;
+    height: 100%;
+
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+/*footer*/
+.footer {
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    background-color: #091f48;
+}
+
+/**************************************************************/
+
+
+
+/*************************dropdown*****************************/
+.dropdown-box{
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.dropdown-box label{
+    float: left;
+    padding: 5px 0 5px 10px;
+    font-size: 14px;
+    color: #675c5c;
+}
+
+.dropdown{
+    position: relative;
+    width: 300px;
+    cursor: pointer;
+    float: left;
+}
+
+.dropdown .dropdown__label{
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    position: relative;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.dropdown .dropdown__label::before{
+    font-family: 'FontAwesome';
+    content: "\F107";
+    font-size: 16px;
+    position: absolute;
+    right: 5px;
+    top: auto;
+}
+
+.dropdown .dropdown__menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    z-index: 9999;
+    box-sizing: border-box;
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.dropdown .dropdown__menu>li{
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.dropdown .dropdown__menu>li:hover{
+    cursor: pointer;
+    background: #ccc;
+}
+
+.dropdown.open .dropdown__menu{
+    display: block;
+}
+
+/*************************dropdown*****************************/
+.select-box{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.select-box>ul{
+    list-style: none;
+}
+
+.select-box>ul>li {
+    float: left;
+    margin: 30px 30px 0px 0;
+}
+
+.rezults-box{
+    width: 100%;
+    overflow: hidden;
+}
+
+.rezults-box h1{
+    color: #091f48;
+    padding: 30px 0 10px 0;
+}
+
+.rezults-box p{
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
