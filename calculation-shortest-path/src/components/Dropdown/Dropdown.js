@@ -21,24 +21,23 @@ class Dropdown extends Component{
             index: index
         })
 
-       let vStart = 1
-       let vEnd = 5
+    //    let vStart = 1
+    //    let vEnd = 5
 
        const num = this.state.items[index].text
         if(dropboxNumber===1){
-            vStart = num
+           
              console.log('начальная вершина')
-            // this.props.onCalculationPath(1, 2, this.props.graphFile.graph)
+            this.props.onCalculationPath(num, null, this.props.graphFile)
         }
  
          if(dropboxNumber===2){
             console.log('конечная вершина')
-            vEnd = num
              //this.pathСalculationHandler(null,num)
-            //  this.props.onCalculationPath(3, 4, this.props.graphFile.graph)
+             this.props.onCalculationPath(null, num, this.props.graphFile)
          }    
         
-         this.props.onCalculationPath(vStart, vEnd, this.props.graphFile)
+         //this.props.onCalculationPath(vStart, vEnd, this.props.graphFile)
      }
 
     
@@ -98,7 +97,8 @@ class Dropdown extends Component{
               items: items
          })
 
-       //  this.pathСalculationHandler()
+         this.props.onCalculationPath(null, null, this.props.graphFile)
+
  
     }
     

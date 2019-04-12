@@ -1,8 +1,7 @@
 const initialState = {
     result: 'Здесь будет выведен результат',
     start: 1,
-    end: 1
-    
+    end: 1   
 }
 
 export default function rootReducer(state = initialState, actions){
@@ -10,9 +9,10 @@ export default function rootReducer(state = initialState, actions){
     switch(actions.type){
         case 'CALCULATION__PATH':
             //точка старта
-            let vStart = actions.start 
+            let vStart = actions.start === null ? state.start : actions.start
+        
             //конечная точка
-            let vEnd  = actions.end 
+            let vEnd  = actions.end === null ? state.end : actions.end
             //json графа
             const graf = actions.graph
 
@@ -120,7 +120,9 @@ export default function rootReducer(state = initialState, actions){
 
 
         return {
-            result: rezult
+            result: rezult,
+            start: vStart,
+            end: vEnd 
         }
      //   break
 
